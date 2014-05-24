@@ -1,5 +1,5 @@
 ## These two functions work together to provide a caching mechanism for inverted matrices.
-## They allowed a matrix to be stored together with its inverse. Because caluclating the 
+## They allow a matrix to be stored together with its inverse. Because caluclating the 
 ## inverse may take time, it only needs to be calculated once and is then stored so
 ## it can be retrieved any time it is needed.
 
