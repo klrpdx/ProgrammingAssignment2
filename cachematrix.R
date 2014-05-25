@@ -21,7 +21,10 @@ makeCacheMatrix <- function(x = matrix()) {
   
   inverted <- NULL
   
-  # Store a matrix. Set inverted to NULL so we know we need a new inversion calculated
+  # Store a matrix. Set inverted to NULL so we know we need a new inversion calculated.
+  # The <<- operators cause the value to be stored in the existing vars in the parent environment,
+  # otherwise new vars existing only in the run-time enviroment would be created, and nothing could
+  # be cached.
   set <- function(y) {
     x <<- y
     inverted <<- NULL
